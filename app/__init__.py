@@ -88,6 +88,7 @@ def ConsultarRanking():
         else:
             lista.extend(lista_original[4:-1])
     driver.close()
+    lista[0][-1]="Competencia"
     return lista
 
 ######################
