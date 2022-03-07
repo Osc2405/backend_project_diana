@@ -1,3 +1,3 @@
 # Diana's Project
 
-El objetivo de este proyecto es extraer y filtrar datos desde la pagina de colombiacuatica para visualizar solo datos necesarios.
+The objective of this project is to extract and filter the relevant data for the swimming league from the existing classification.
