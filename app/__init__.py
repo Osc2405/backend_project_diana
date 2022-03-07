@@ -42,10 +42,14 @@ competencias=['50M Libre/50M Free', '100M Libre/100M Free', '200M Libre/200M Fre
 
 def ConsultarRanking():
     lista=[]
-    URL="https://www.colombiaacuatica.com/backtun/torneos/fecna/sw/rankingfecna01.php"
+    
+    URL=Config.URL_PATH
+    
     driver = webdriver.Chrome(options=options)
+
     for event in competencias:
-        URL="https://www.colombiaacuatica.com/backtun/torneos/fecna/sw/rankingfecna01.php"
+        
+        URL=Config.URL_PATH
         driver.get(URL)
         current_url=driver.current_url
         
@@ -97,6 +101,8 @@ def ConsultarRanking():
 ##RUTAS##
 @app.route("/")
 def index():
+    driver = webdriver.Chrome(options=options)
+    driver.quit()
     return "Hola"
 
 @app.route("/api/ranking",methods=["GET"])

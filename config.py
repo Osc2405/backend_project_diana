@@ -12,4 +12,5 @@ class Config:
     DB_TOKEN = os.environ.get("DB_TOKEN", "")  # Para Encriptar la DB
     ENCRYPT_DB = True
     DB_PASSWORD=os.environ.get("DB_PASSWORD","")
+    URL_PATH=os.environ.get("URL","")
 
